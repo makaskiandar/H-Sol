@@ -19,9 +19,9 @@ html {
     justify-content: space-around;
 }
 
-.navbar img {
-    width: 10%;
-    height: 30%;
+.nav-logo{
+    width:180px;
+    height:auto;
 }
 
 .links {
@@ -307,9 +307,9 @@ footer{
     padding:70px 80px;
 }
 
-.logo{
+.footer-logo{
     width:80px;
-    height: 40px;
+    height:40px;
 }
 
 .column1 p{
@@ -363,4 +363,341 @@ footer{
     height:1px;
     background:rgb(75, 73, 73);
     margin-left: 5vh;
+}
+/*responsive*/
+/* Hide hamburger on desktop */
+.menu-toggle{
+    display: none;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    z-index: 9999;
+    margin-right: 50px;
+}
+
+/* ===========================
+   TABLET & MOBILE
+=========================== */
+
+@media (max-width:992px){
+
+    .navbar{
+        height:80px;
+        padding:0 20px;
+        justify-content:space-between;
+        z-index:999;
+    }
+
+    .nav-logo{
+        width:150px;
+    }
+
+    .buttonnav{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:34px;
+    }
+
+    .links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#f9f7f4;
+        padding:30px 0;
+        gap:20px;
+        box-shadow:0 10px 20px rgba(0,0,0,.08);
+    }
+
+    .links.active{
+        display:flex;
+    }
+
+    .links li a{
+        font-size:18px;
+    }
+
+    .dropdown-menu{
+        position:static;
+        width:100%;
+        opacity:1;
+        visibility:visible;
+        transform:none;
+        display:none;
+        box-shadow:none;
+        border-radius:0;
+    }
+
+    .dropdown.active .dropdown-menu{
+        display:block;
+    }
+    .footerr1{
+        grid-template-columns:1fr 1fr ;
+        gap:45px;
+        padding:50px 25px;
+    }
+
+    .column1 p,
+    .column2 li{
+        font-size:14px;
+    }
+
+    .column2 h1{
+        font-size:16px;
+    }
+
+    .footerlineee{
+        width:90%;
+        margin:auto;
+    }
+
+    .end{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        padding:30px 20px;
+    }
+
+    .footerleft,
+    .footerright{
+        margin:0;
+        text-align:center;
+        font-size:18px;
+    }
+}
+
+
+@media (max-width:768px){
+
+.main4{
+    padding:50px 20px;
+    height:auto;
+}
+
+.a1{
+    font-size:16px;
+}
+
+.a2{
+    font-size:38px;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+.main4a,
+.main5b{
+    flex-direction:column;
+    width:100%;
+    height:auto;
+    border-radius:25px;
+    padding:25px;
+    box-sizing:border-box;
+}
+
+.main4left,
+.main5right{
+    margin:0;
+}
+
+.main4right,
+.main5left{
+    margin:30px 0 0;
+    order:-1;
+}
+
+.main4right img,
+.main5left img{
+    width:100%;
+    height:auto;
+}
+
+.main4left button,
+.main5right button{
+    margin-top:20px;
+    font-size:15px;
+}
+
+.main4left h1,
+.main5right h1{
+    font-size:34px;
+    line-height:1.2;
+}
+
+.main4left p,
+.main5right p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.main4left p br,
+.main5right p br{
+    display:none;
+}
+
+.main4left span,
+.main5right span{
+    font-size:17px;
+}
+
+.main4buttons,
+.main5buttons{
+    flex-direction:column;
+    gap:15px;
+    margin-top:35px;
+}
+
+.main4buttons a,
+.main5buttons a{
+    width:100%;
+    text-align:center;
+    box-sizing:border-box;
+    font-size:17px;
+}
+
+.main4buttons div,
+.main5buttons div{
+    margin-top:0;
+    font-size:17px;
+}
+
+}
+@media (min-width:769px) and (max-width:992px){
+
+.main4{
+    padding:60px 35px;
+    height:auto;
+}
+
+.a2{
+    font-size:48px;
+}
+
+.main4a,
+.main5b{
+    flex-direction:column;
+    width:100%;
+    height:auto;
+    padding:35px;
+    box-sizing:border-box;
+}
+
+.main4left,
+.main5right{
+    margin:0;
+}
+
+.main4right,
+.main5left{
+    margin:35px auto;
+    order:-1;
+}
+
+.main4right img,
+.main5left img{
+    width:100%;
+    max-width:600px;
+    height:auto;
+}
+
+.main4left button,
+.main5right button{
+    margin-top:20px;
+}
+
+.main4left h1,
+.main5right h1{
+    font-size:46px;
+}
+
+.main4left p,
+.main5right p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.main4left p br,
+.main5right p br{
+    display:none;
+}
+
+.main4buttons,
+.main5buttons{
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+}
+@media (min-width:993px) and (max-width:1200px){
+
+.main4{
+    padding:70px 40px;
+    height:auto;
+}
+
+.a2{
+    font-size:54px;
+}
+
+.main4a,
+.main5b{
+    width:100%;
+    height:auto;
+    padding:40px;
+    box-sizing:border-box;
+    gap:40px;
+}
+
+.main4left,
+.main5right{
+    margin:0;
+    flex:1;
+}
+
+.main4right,
+.main5left{
+    margin:0;
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.main4right img,
+.main5left img{
+    width:100%;
+    max-width:450px;
+    height:auto;
+}
+
+.main4left h1,
+.main5right h1{
+    font-size:48px;
+}
+
+.main4left p,
+.main5right p{
+    font-size:20px;
+    line-height:1.7;
+}
+
+.main4left p br,
+.main5right p br{
+    display:none;
+}
+
+.main4buttons,
+.main5buttons{
+    gap:20px;
+}
+
+.main4buttons a,
+.main5buttons a{
+    font-size:18px;
+}
+
 }

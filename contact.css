@@ -16,9 +16,9 @@
     justify-content: space-around;
 }
 
-.navbar img {
-    width: 10%;
-    height: 30%;
+.nav-logo{
+    width:180px;
+    height:auto;
 }
 
 .links {
@@ -253,9 +253,9 @@ footer{
     padding:70px 80px;
 }
 
-.logo{
+.footer-logo{
     width:80px;
-    height: 40px;
+    height:40px;
 }
 
 .column1 p{
@@ -309,4 +309,290 @@ footer{
     height:1px;
     background:rgb(75, 73, 73);
     margin-left: 5vh;
+}
+/*responsive*/
+/* Hide hamburger on desktop */
+.menu-toggle{
+    display: none;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    z-index: 9999;
+    margin-right: 50px;
+}
+
+/* ===========================
+   TABLET & MOBILE
+=========================== */
+
+@media (max-width:992px){
+
+    .navbar{
+        height:80px;
+        padding:0 20px;
+        justify-content:space-between;
+        z-index:999;
+    }
+
+    .nav-logo{
+        width:150px;
+    }
+
+    .buttonnav{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:34px;
+    }
+
+    .links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#f9f7f4;
+        padding:30px 0;
+        gap:20px;
+        box-shadow:0 10px 20px rgba(0,0,0,.08);
+    }
+
+    .links.active{
+        display:flex;
+    }
+
+    .links li a{
+        font-size:18px;
+    }
+
+    .dropdown-menu{
+        position:static;
+        width:100%;
+        opacity:1;
+        visibility:visible;
+        transform:none;
+        display:none;
+        box-shadow:none;
+        border-radius:0;
+    }
+
+    .dropdown.active .dropdown-menu{
+        display:block;
+    }
+    .footerr1{
+        grid-template-columns:1fr 1fr ;
+        gap:45px;
+        padding:50px 25px;
+    }
+
+    .column1 p,
+    .column2 li{
+        font-size:14px;
+    }
+
+    .column2 h1{
+        font-size:16px;
+    }
+
+    .footerlineee{
+        width:90%;
+        margin:auto;
+    }
+
+    .end{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        padding:30px 20px;
+    }
+
+    .footerleft,
+    .footerright{
+        margin:0;
+        text-align:center;
+        font-size:18px;
+    }
+}
+@media (max-width:768px){
+
+    .main7{
+        flex-direction:column;
+        height:auto;
+        padding:60px 20px;
+        gap:50px;
+    }
+
+    .main7left{
+        margin:0;
+    }
+
+    .main7left span{
+        font-size:16px;
+    }
+
+    .main7left h1{
+        font-size:28px;
+        line-height:1.2;
+    }
+
+    .main7left p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .word{
+        font-size:16px;
+        margin-top:30px;
+        margin-bottom:15px;
+    }
+
+    .info{
+        font-size:18px;
+    }
+
+    .social{
+        margin-top:35px;
+        gap:15px;
+        flex-wrap:wrap;
+    }
+
+    .social div{
+        padding:12px;
+    }
+
+    .social img{
+        width:20px;
+        height:20px;
+    }
+
+    .main7right{
+        margin:0;
+        width:100%;
+    }
+
+    .row{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+    .input-box label{
+        font-size:16px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+        font-size:17px;
+    }
+
+    .send-btn{
+        height:60px;
+        font-size:17px;
+    }
+
+}
+@media (min-width:769px) and (max-width:992px){
+
+    .main7{
+        flex-direction:column;
+        height:auto;
+        padding:70px 40px;
+        gap:60px;
+    }
+
+    .main7left{
+        margin:0;
+    }
+
+    .main7left h1{
+        font-size:48px;
+    }
+
+    .main7left p{
+        font-size:18px;
+        line-height:1.8;
+    }
+
+    .info{
+        font-size:20px;
+    }
+
+    .social{
+        margin-top:40px;
+    }
+
+    .main7right{
+        margin:0;
+        width:100%;
+    }
+
+    .row{
+        gap:30px;
+    }
+
+    .input-box label{
+        font-size:17px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+        font-size:18px;
+    }
+
+    .send-btn{
+        height:65px;
+    }
+
+}
+@media (min-width:993px) and (max-width:1200px){
+
+    .main7{
+        height:auto;
+        padding:70px 50px;
+        gap:50px;
+        align-items:flex-start;
+    }
+
+    .main7left{
+        margin:0;
+        flex:1;
+    }
+
+    .main7right{
+        margin:0;
+        flex:1;
+        max-width:520px;
+    }
+
+    .main7left h1{
+        font-size:50px;
+    }
+
+    .main7left p{
+        font-size:18px;
+    }
+
+    .word{
+        font-size:18px;
+    }
+
+    .info{
+        font-size:20px;
+    }
+
+    .row{
+        gap:30px;
+    }
+
+    .input-box label{
+        font-size:17px;
+    }
+
+    .input-box input,
+    .input-box textarea{
+        font-size:18px;
+    }
+
 }
