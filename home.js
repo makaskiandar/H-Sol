@@ -8,14 +8,16 @@ services.forEach(service => {
 
         service.classList.toggle("active");
 
-        if(service.classList.contains("active")){
+        if (service.classList.contains("active")) {
             img.src = "down.svg";
-        }
-        else{
+            img.classList.add("yellow");
+        } else {
             img.src = "next.svg";
+            img.classList.remove("yellow");
         }
 
     });
+
 });
 const hiddenElements = document.querySelectorAll(".hidden");
 

@@ -344,7 +344,7 @@ footer{
 
     .menu-toggle{
         display:block;
-        font-size:34px;
+        font-size:24px;
     }
 
     .links{
@@ -434,7 +434,7 @@ footer{
     }
 
     .main7left h1{
-        font-size:28px;
+        font-size:22px;
         line-height:1.2;
     }
 
@@ -445,22 +445,26 @@ footer{
 
     .word{
         font-size:16px;
-        margin-top:30px;
+        margin-top:0px;
         margin-bottom:15px;
     }
 
     .info{
         font-size:18px;
+        margin-bottom: 10px;
     }
 
     .social{
         margin-top:35px;
         gap:15px;
         flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     .social div{
-        padding:12px;
+        padding:12px 15px;
     }
 
     .social img{
@@ -479,17 +483,17 @@ footer{
     }
 
     .input-box label{
-        font-size:16px;
+        font-size:13px;
     }
 
     .input-box input,
     .input-box textarea{
-        font-size:17px;
+        font-size:10px;
     }
 
     .send-btn{
         height:60px;
-        font-size:17px;
+        font-size:14px;
     }
 
 }

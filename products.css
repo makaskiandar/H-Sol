@@ -189,7 +189,7 @@ html {
     margin-top: 10vh;
     gap: 30px;
 }
-.main4buttons a{
+.main4buttons .buttonn{
     text-decoration: none;
     color: white;
     background-color: black;
@@ -197,6 +197,12 @@ html {
     font-size: 23px;
     border-radius: 30px;
     
+}
+.main4buttons .visit{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 12px;
 }
 .main4buttons div{
     margin-top: 14px;
@@ -398,7 +404,7 @@ footer{
 
     .menu-toggle{
         display:block;
-        font-size:34px;
+        font-size:24px;
     }
 
     .links{
@@ -478,15 +484,18 @@ footer{
     padding:50px 20px;
     height:auto;
 }
+.main5{
+    margin-top: -50px;
+}
 
 .a1{
     font-size:16px;
 }
 
 .a2{
-    font-size:38px;
+    font-size:30px;
     margin-top:10px;
-    margin-bottom:30px;
+    margin-bottom:-50px;
 }
 
 .main4a,
@@ -524,13 +533,13 @@ footer{
 
 .main4left h1,
 .main5right h1{
-    font-size:34px;
+    font-size:24px;
     line-height:1.2;
 }
 
 .main4left p,
 .main5right p{
-    font-size:17px;
+    font-size:13px;
     line-height:1.8;
 }
 
@@ -541,9 +550,13 @@ footer{
 
 .main4left span,
 .main5right span{
-    font-size:17px;
+    font-size:12px;
 }
-
+.main4line,
+.main5line{
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
 .main4buttons,
 .main5buttons{
     flex-direction:column;
@@ -551,18 +564,18 @@ footer{
     margin-top:35px;
 }
 
-.main4buttons a,
-.main5buttons a{
+.main4buttons .buttonn,
+.main5buttons .buttonn{
     width:100%;
     text-align:center;
     box-sizing:border-box;
-    font-size:17px;
+    font-size:15px;
 }
 
-.main4buttons div,
-.main5buttons div{
+.main4buttons .visit,
+.main5buttons .visit{
     margin-top:0;
-    font-size:17px;
+    font-size:13px;
 }
 
 }
