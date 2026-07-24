@@ -1573,7 +1573,10 @@ footer{
     font-size:18px;
     margin-bottom: 20px;
 }
-
+.service.active .view-btn {
+   font-size: 14px;
+   padding: 5px 5px;
+}
 .m33{
     align-items:flex-start;
     gap:12px;
