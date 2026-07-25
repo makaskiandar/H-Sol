@@ -64,30 +64,30 @@
             </div>
         </div>
         <section class="main7right">
-            <form>
+            <form id="contact-form">
                 <div class="row">
                     <div class="input-box">
                         <label>NAME</label>
-                        <input type="text" placeholder="Your name">
+                        <input type="text" name="name" required placeholder="Your name" >
                     </div>
                     <div class="input-box">
                         <label>WHATSAPP / CONTACT NO.</label>
-                        <input type="text" placeholder="+923164946810">
+                        <input type="text" name="phone" required placeholder="+923164946810">
                     </div>
                 </div>
                 <div class="input-box">
                     <label>EMAIL</label>
-                    <input type="email" placeholder="info@hsol.pk">
+                    <input type="email" name="email" required placeholder="info@hsol.pk">
                 </div>
                 <div class="input-box">
                     <label>SUBJECT</label>
-                    <input type="text" placeholder="What's this about?">
+                    <input type="text" name="subject" required placeholder="What's this about?">
                 </div>
                 <div class="input-box">
                     <label>MESSAGE</label>
-                    <textarea placeholder="Tell us about your project..."></textarea>
+                    <textarea name="message" required placeholder="Tell us about your project..."></textarea>
                 </div>
-                <button class="send-btn">Send Message ➜ </button>
+                <button  type="submit" class="send-btn">Send Message ➜ </button>
             </form>
         </section>
     </div>
@@ -141,6 +141,16 @@
             </div>
         </div>
     </footer>
+    <div id="popup" class="popup">
+    <div class="popup-content">
+        <div class="icon">✓</div>
+        <h2>Message Sent!</h2>
+        <p>Thanks for reaching out. We'll get back to you as soon as possible.</p>
+        <button id="closePopup">Close</button>
+    </div>
+</div>
     <script src="navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>
