@@ -15,10 +15,16 @@
     position: fixed;
     justify-content: space-around;
 }
-
 .nav-logo{
-    width:180px;
+    width:300px;
     height:auto;
+    margin-top: 19px;
+    margin-left: -110px;
+}
+.footer-logo{
+    width:350px;
+    margin-left: -60px;
+    
 }
 
 .links {
@@ -253,10 +259,7 @@ footer{
     padding:70px 80px;
 }
 
-.footer-logo{
-    width:80px;
-    height:40px;
-}
+
 
 .column1 p{
     margin-top:20px;
@@ -334,9 +337,15 @@ footer{
         z-index:999;
     }
 
-    .nav-logo{
-        width:150px;
-    }
+       .footer-logo{
+    width:150px;
+    margin-left: -30px;
+}
+
+.nav-logo{
+    width:170px;
+    margin-left: -40px;
+}
 
     .buttonnav{
         display:none;

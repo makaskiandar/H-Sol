@@ -16,10 +16,14 @@
     position: fixed;
     justify-content: space-around;
 }
-
 .nav-logo{
-    width:180px;
+    width:300px;
     height:auto;
+    margin-top: 19px;
+}
+.footer-logo{
+    width:350px;
+    
 }
 
 .links {
@@ -264,10 +268,7 @@ footer{
     padding:70px 80px;
 }
 
-.footer-logo{
-    width:80px;
-    height:40px;
-}
+
 
 .column1 p{
     margin-top:20px;
@@ -537,9 +538,13 @@ footer{
         justify-content:space-between;
     }
 
-    .nav-logo{
-        width:170px;
-    }
+   .footer-logo{
+    width:150px;
+}
+
+.nav-logo{
+    width:170px;
+}
 
     .links{
         gap:25px;
