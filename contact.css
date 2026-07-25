@@ -673,3 +673,55 @@ footer{
         opacity: 1;
     }
 }
+/*media query for alert*/
+.popup-content {
+    animation: popup 0.35s ease;
+}
+
+@keyframes popup {
+    from {
+        transform: translateY(30px) scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .popup {
+        padding: 20px;
+    }
+
+    .popup-content {
+        width: 90%;
+        max-width: 340px;
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
+    }
+
+    .popup h2 {
+        font-size: 24px;
+        margin: 15px 0 10px;
+    }
+
+    .popup p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .popup button {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+}
