@@ -734,3 +734,12 @@ footer{
         font-size: 15px;
     }
 }
+.footerright a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footerright a:hover {
+    color: #FFD400;
+}
